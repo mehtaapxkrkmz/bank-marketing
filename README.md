@@ -1,4 +1,5 @@
 # Bank Marketing Prediction with Logistic Regression
+Kullanılan Dataset:https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset
 
 Bu proje, bir bankanın müşteri verilerini kullanarak, müşterinin bir ürünü alıp almayacağını tahmin etmeyi amaçlamaktadır. Lojistik regresyon modelini kullanarak bu tahminler yapılmış ve modelin doğruluğu, karmaşıklığı, doğruluk oranı (accuracy) ve konfizyon matrisi gibi değerlendirme metrikleri hesaplanmıştır.
 
