@@ -1,2 +1,65 @@
-# bank-marketing
-Bank Marketing Dataset kullanılarak veri setine lojistik regresyon uygulanması
+Bank Marketing Prediction with Logistic Regression
+Bu proje, bir bankanın müşteri verilerini kullanarak, müşterinin bir ürünü alıp almayacağını tahmin etmeyi amaçlamaktadır. Lojistik regresyon modelini kullanarak bu tahminler yapılmış ve modelin doğruluğu, karmaşıklığı, doğruluk oranı (accuracy) ve konfizyon matrisi gibi değerlendirme metrikleri hesaplanmıştır.
+
+İçindekiler
+Proje Hakkında
+Veri Seti
+Modelin Eğitilmesi ve Değerlendirilmesi
+Kullanılan Kütüphaneler
+Sonuçlar
+Sonuçlar ve Değerlendirme
+Yapılacaklar
+Proje Hakkında
+Bu projede, bank marketing kampanyasına katılan müşterilerin bilgileri kullanılarak, müşterilerin bir bankanın ürününü satın alıp almayacağı tahmin edilmiştir. Proje, sınıflandırma problemi olup, hedef değişken "deposit" (evet veya hayır) olup, modelin başarısını değerlendirmek için lojistik regresyon kullanılmıştır.
+
+Veri Seti
+Veri seti, bir bankanın müşterilerinin demografik ve geçmiş finansal bilgilerini içermektedir. Her müşteri için aşağıdaki özellikler mevcuttur:
+
+Age: Yaş
+Job: İş türü
+Marital: Medeni durum
+Education: Eğitim durumu
+Balance: Hesap bakiyesi
+Housing: Konut kredisi var mı
+Loan: Kredi kartı borcu var mı
+Contact: İletişim kanalı
+Previous: Önceki kampanyaya katılım durumu
+Campaign: Kampanyaya katılım sayısı
+Pdays: Sonraki kampanya için gün sayısı
+Duration: İletişim süresi
+Y: Hedef değişken (1: Ürünü satın aldı, 0: Satın almadı)
+Modelin Eğitilmesi ve Değerlendirilmesi
+Veri Setinin Hazırlanması: Veri seti, eğitim ve test verilerine ayrılmıştır. Eğitim verisi ile model eğitilmiş ve test verisi ile değerlendirilmiştir.
+
+Öznitelik Dönüşümü: Kategorik veriler, one-hot encoding yöntemi ile sayısal verilere dönüştürülmüştür.
+
+Modelin Eğitilmesi: Lojistik regresyon modeli kullanılarak eğitim verisi üzerinde eğitim yapılmıştır.
+
+Model Değerlendirmesi:
+
+Doğruluk Oranı (Accuracy): Modelin doğru tahminlerinin oranı hesaplanmıştır.
+Confusion Matrix: Modelin sınıflandırma başarısını görselleştiren bir karmaşıklık matrisi oluşturulmuştur.
+Kullanılan Kütüphaneler
+Proje için aşağıdaki Python kütüphaneleri kullanılmıştır:
+
+pandas - Veri işleme ve manipülasyonu için
+numpy - Matematiksel hesaplamalar için
+scikit-learn - Model eğitimi, test ve değerlendirme metrikleri için
+matplotlib ve seaborn - Veri görselleştirme için
+Sonuçlar
+Accuracy: Modelin doğruluk oranı, eğitim ve test verisi üzerinde hesaplanmıştır.
+Confusion Matrix: Modelin doğru ve yanlış tahminlerini görsel olarak sunan bir konfizyon matrisi oluşturulmuştur.
+
+
+Accuracy: Modelin test verisi üzerindeki doğruluk oranı %xx olarak hesaplanmıştır.
+Sonuçlar ve Değerlendirme
+Model, genel olarak iyi bir performans göstermiştir. Ancak, doğruluk oranı %xx civarlarında kalmıştır. Bu, modelin geliştirilmesi için bazı iyileştirmeler yapılabileceğini göstermektedir. Örneğin:
+
+Veri temizliği ve ön işleme süreçleri geliştirilerek modelin doğruluğu artırılabilir.
+Daha karmaşık modeller, örneğin rastgele orman veya destek vektör makineleri (SVM), denenebilir.
+Kategorik veriler için farklı dönüştürme teknikleri kullanılabilir.
+
+Yapılacaklar
+Modelin başarısını artırmak için hyperparametre optimizasyonu yapılabilir.
+Modelin doğruluğunu artırmak için daha fazla veri eklenebilir.
+Farklı sınıflandırma algoritmaları ile karşılaştırma yapılabilir.
