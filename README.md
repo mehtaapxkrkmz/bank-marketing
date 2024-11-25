@@ -66,11 +66,11 @@ Proje için aşağıdaki Python kütüphaneleri kullanılmıştır:
 - **Confusion Matrix**:
 [[True Negatives, False Positives] [False Negatives, True Positives]]
 
-- **Accuracy**: Modelin test verisi üzerindeki doğruluk oranı %xx olarak hesaplanmıştır.
+- **Accuracy**: Modelin test verisi üzerindeki doğruluk oranı hesaplanmıştır.
 
 ## Sonuçlar ve Değerlendirme
 
-Model, genel olarak iyi bir performans göstermiştir. Ancak, doğruluk oranı %xx civarlarında kalmıştır. Bu, modelin geliştirilmesi için bazı iyileştirmeler yapılabileceğini göstermektedir. Örneğin:
+Model, genel olarak iyi bir performans göstermiştir.Modelin geliştirilmesi için bazı iyileştirmeler yapılabilir. Örneğin:
 
 - Veri temizliği ve ön işleme süreçleri geliştirilerek modelin doğruluğu artırılabilir.
 - Daha karmaşık modeller, örneğin rastgele orman veya destek vektör makineleri (SVM), denenebilir.
